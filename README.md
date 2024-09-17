@@ -25,31 +25,31 @@ sudo apt update && sudo apt upgrade -y
 ### Display current directory path
 ```bash
 pwd
-
+```
 ### List files and directories (detailed view)
 ```bash
 ls -al
-
-Create a new directory
+```
+### Create a new directory
 ```bash
 mkdir <directory_name>
-
-Navigate to a directory
+```
+### Navigate to a directory
 ```bash
 cd <directory_path>
-
-Check disk space usage
+```
+### Check disk space usage
 ```bash
 df -h
-
-Check free memory and swap
+```
+### Check free memory and swap
 ```bash
 free -h
-
-Clear the terminal screen
+```
+### Clear the terminal screen
 ```bash
 clear
-
+```
 
 
 ## 2. File and Directory Management
@@ -57,232 +57,231 @@ clear
 Create a new file
 ```bash
 touch <filename>
-
-View contents of a file
+```
+### View contents of a file
 ```bash
 cat <filename>
-
-Edit a file with nano
+```
+### Edit a file with nano
 ```bash
 nano <filename>
-
-Move or rename a file/directory
+```
+### Move or rename a file/directory
 ```bash
 mv <source> <destination>
-
-Copy a file
+```
+### Copy a file
 ```bash
 cp <source> <destination>
-
-Delete a file
+```
+### Delete a file
 ```bash
 rm <filename>
-
-Recursively delete a directory
+```
+### Recursively delete a directory
 ```bash
 rm -r <directory_name>
-
-View the last 10 lines of a file
+```
+### View the last 10 lines of a file
 ```bash
 tail <filename>
-
-View the first 10 lines of a file
+```
+### View the first 10 lines of a file
 ```bash
 head <filename>
-
+```
 
 
 ## 3. User and Permission Management
 
-Create a new user
+### Create a new user
 ```bash
 sudo adduser <username>
-
-Delete a user
+```
+### Delete a user
 ```bash
 sudo deluser <username>
-
-Add user to sudo group
+```
+### Add user to sudo group
 ```bash
 sudo usermod -aG sudo <username>
-
-Change file ownership
+```
+### Change file ownership
 ```bash
 sudo chown <user>:<group> <file_or_directory>
-
-Modify file permissions
+```
+### Modify file permissions
 ```bash
 chmod 755 <file_or_directory>
-
-Switch to another user
+```
+### Switch to another user
 ```bash
 su - <username>
+```
 
 
+## 4. Networking Commands
 
-# 4. Networking Commands
-
-Display current network configuration
+### Display current network configuration
 ```bash
 ifconfig
-
-Check network connectivity
+```
+### Check network connectivity
 ```bash
 ping <hostname_or_ip>
-
-Show routing table
+```
+### Show routing table
 ```bash
 route -n
-
-Check open ports on the system
+```
+### Check open ports on the system
 ```bash
 sudo netstat -tuln
-
-Display DNS information
+```
+### Display DNS information
 ```bash
 nslookup <domain_name>
-
-Trace the route packets take to a network host
+```
+### Trace the route packets take to a network host
 ```bash
 traceroute <hostname_or_ip>
-
-List open network connections
+```
+### List open network connections
 ```bash
 sudo lsof -i
-
-Test a specific port (e.g., 80)
+```
+### Test a specific port (e.g., 80)
 ```bash
 telnet <hostname> 80
+```
 
-
-
-# 5. System Monitoring and Management
+## 5. System Monitoring and Management
 
 Check system uptime
 ```bash
 uptime
-
-View active processes
+```
+### View active processes
 ```bash
 top
-
-View memory usage
+```
+### View memory usage
 ```bash
 htop
-
-List running processes (detailed)
+```
+### List running processes (detailed)
 ```bash
 ps aux
-
-Terminate a process by PID
+```
+### Terminate a process by PID
 ```bash
 kill <PID>
-
-Reboot the system
+```
+### Reboot the system
 ```bash
 sudo reboot
-
-Shut down the system
+```
+### Shut down the system
 ```bash
 sudo shutdown -h now
-
-Check system logs
+```
+### Check system logs
 ```bash
 sudo tail -f /var/log/syslog
-
+```
 
 
 ## 6. Package Management
 
-Search for a package
+### Search for a package
 ```bash
 sudo apt search <package_name>
-
-Install a package
+```
+### Install a package
 ```bash
 sudo apt install <package_name>
-
-Remove a package
+```
+### Remove a package
 ```bash
 sudo apt remove <package_name>
-
-Purge (remove config files too)
+```
+### Purge (remove config files too)
 ```bash
 sudo apt purge <package_name>
-
-List installed packages
+```
+### List installed packages
 ```bash
 dpkg -l
-
-Check details of a specific package
+```
+### Check details of a specific package
 ```bash
 apt-cache show <package_name>
+```
 
 
+## 7. Services and Daemon Management
 
-# 7. Services and Daemon Management
-
-Start a service
+### Start a service
 ```bash
 sudo systemctl start <service_name>
-
-Stop a service
+```
+### Stop a service
 ```bash
 sudo systemctl stop <service_name>
-
-Restart a service
+```
+### Restart a service
 ```bash
 sudo systemctl restart <service_name>
-
-Enable a service to start at boot
+```
+### Enable a service to start at boot
 ```bash
 sudo systemctl enable <service_name>
-
-Disable a service from starting at boot
+```
+### Disable a service from starting at boot
 ```bash
 sudo systemctl disable <service_name>
-
-Check the status of a service
+```
+### Check the status of a service
 ```bash
 sudo systemctl status <service_name>
-
+```
 
 
 ## 8. Docker Commands
 
-Install Docker (Ubuntu)
+### Install Docker (Ubuntu)
 ```bash
 sudo apt install docker.io
-
-Check Docker version
+```
+### Check Docker version
 ```bash
 docker --version
-
-Start Docker service
+```
+### Start Docker service
 ```bash
 sudo systemctl start docker
-
-Run a container
+```
+### Run a container
 ```bash
 docker run -d -p 8080:80 --name <container_name> <image_name>
-
-List running containers
+```
+### List running containers
 ```bash
 docker ps
-
-Stop a running container
+```
+### Stop a running container
 ```bash
 docker stop <container_name>
-
-Remove a container
+```
+### Remove a container
 ```bash
 docker rm <container_name>
-
-Pull an image from Docker Hub
+```
+### Pull an image from Docker Hub
 ```bash
 docker pull <image_name>
-
-Push an image to a repository
+```
+### Push an image to a repository
 ```bash
 docker push <repository_name>/<image_name>
 ```
