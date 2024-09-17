@@ -15,7 +15,7 @@ This guide covers essential Ubuntu commands tailored for DevOps engineers, from 
 
 
 
-1. Basic Ubuntu Commands
+# 1. Basic Ubuntu Commands
 
 Update and upgrade the system packages
 sudo apt update && sudo apt upgrade -y
