@@ -43,7 +43,7 @@ clear
 
 
 
-2. File and Directory Management
+# 2. File and Directory Management
 
 Create a new file
 touch <filename>
@@ -74,7 +74,7 @@ head <filename>
 
 
 
-3. User and Permission Management
+# 3. User and Permission Management
 
 Create a new user
 sudo adduser <username>
@@ -96,7 +96,7 @@ su - <username>
 
 
 
-4. Networking Commands
+# 4. Networking Commands
 
 Display current network configuration
 ifconfig
@@ -124,7 +124,7 @@ telnet <hostname> 80
 
 
 
-5. System Monitoring and Management
+# 5. System Monitoring and Management
 
 Check system uptime
 uptime
@@ -152,7 +152,7 @@ sudo tail -f /var/log/syslog
 
 
 
-6. Package Management
+# 6. Package Management
 
 Search for a package
 sudo apt search <package_name>
@@ -174,7 +174,7 @@ apt-cache show <package_name>
 
 
 
-7. Services and Daemon Management
+# 7. Services and Daemon Management
 
 Start a service
 sudo systemctl start <service_name>
@@ -196,7 +196,7 @@ sudo systemctl status <service_name>
 
 
 
-8. Docker Commands
+# 8. Docker Commands
 
 Install Docker (Ubuntu)
 sudo apt install docker.io
@@ -227,7 +227,7 @@ docker push <repository_name>/<image_name>
 
 
 
-9. Kubernetes Commands
+# 9. Kubernetes Commands
 
 Install Minikube (local Kubernetes)
 sudo apt install minikube
@@ -255,7 +255,7 @@ kubectl delete deployment <deployment_name>
 
 
 
-10. CI/CD Pipeline Commands
+# 10. CI/CD Pipeline Commands
     
 Git Commands
 Clone a Git repository
