@@ -1,24 +1,26 @@
 # Ubuntu Commands Cheat Sheet for DevOps Engineers
 This guide covers essential Ubuntu commands tailored for DevOps engineers, from basic system navigation to advanced Docker and Kubernetes management. It's designed to help streamline your workflow and get you productive in a DevOps environment quickly.
 
-# Table of Contents:
-1. Basic Ubuntu Commands
-2. File and Directory Management
-3. User and Permission Management
-4. Networking Commands
-5. System Monitoring and Management
-6. Package Management
-7. Services and Daemon Management
-8. Docker Commands
-9. Kubernetes Commands
-10. CI/CD Pipeline Commands
+## Table of Contents:
+1. [Basic Ubuntu Commands](#basic-ubuntu-commands)
+2. [File and Directory Management](#file-and-directory-management)
+3. [User and Permission Management](#user-and-permission-management)
+4. [Networking Commands](#networking-commands)
+5. [System Monitoring and Management](#system-monitoring-and-management)
+6. [Package Management](#package-management)
+7. [Services and Daemon Management](#services-and-daemon-management)
+8. [Docker Commands](#docker-commands)
+9. [Kubernetes Commands](#kubernetes-commands)
+10. [CI/CD Pipeline Commands](#cicd-pipeline-commands)
 
 
 
-# 1. Basic Ubuntu Commands
+## 1. Basic Ubuntu Commands
 
-Update and upgrade the system packages
+### Update and upgrade the system packages
+```bash
 sudo apt update && sudo apt upgrade -y
+```
 
 Display current directory path
 pwd
